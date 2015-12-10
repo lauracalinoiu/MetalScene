@@ -35,10 +35,10 @@ class ViewController: UIViewController {
         metalLayer.frame = view.layer.frame  // 5
         view.layer.addSublayer(metalLayer)   // 6
         
-        objectToDraw = Cube(device: device)
-        square = Square(device: device)
-        
         commandQueue = device.newCommandQueue()
+        
+        objectToDraw = Cube(device: device, commandQ:commandQueue)
+        //square = Square(device: device)
         
         // 1
         let defaultLibrary = device.newDefaultLibrary()
@@ -76,13 +76,11 @@ class ViewController: UIViewController {
         worldModelMatrix.rotateAroundX(Matrix4.degreesToRad(25), y: 0.0, z: 0.0)
         
         
-        let worldModelForSquare = Matrix4()
-        worldModelForSquare.translate(0.0, y: 0.0, z: -7.0)
-        
-        square.render(commandQueue, pipelineState: pipelineState, drawable: drawable!, parentModelViewMatrix: worldModelForSquare, projectionMatrix: projectionMatrix, clearColor: nil)
+//        let worldModelForSquare = Matrix4()
+//        worldModelForSquare.translate(0.0, y: 0.0, z: -7.0)
+//        
+//        square.render(commandQueue, pipelineState: pipelineState, drawable: drawable!, parentModelViewMatrix: worldModelForSquare, projectionMatrix: projectionMatrix, clearColor: nil)
         objectToDraw.render(commandQueue, pipelineState: pipelineState, drawable: drawable!, parentModelViewMatrix: worldModelMatrix, projectionMatrix: projectionMatrix ,clearColor: nil)
-        
-        
     }
     
     // 1
