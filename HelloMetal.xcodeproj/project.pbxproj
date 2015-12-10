@@ -20,8 +20,8 @@
 		4359566B19FA4F5F00881C62 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359566A19FA4F5F00881C62 /* Triangle.swift */; };
 		4359566D19FA527D00881C62 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359566C19FA527D00881C62 /* Cube.swift */; };
 		D39E3F861C1822FE0012669D /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E3F851C1822FE0012669D /* Square.swift */; };
-		D39E3F881C1830250012669D /* MetalTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E3F871C1830240012669D /* MetalTexture.swift */; };
-		D39E3F8A1C1831FD0012669D /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = D39E3F891C1831FD0012669D /* cube.png */; };
+		D39E3F8C1C198FE70012669D /* MetalTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E3F8B1C198FE70012669D /* MetalTexture.swift */; };
+		D39E3F8E1C1990080012669D /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = D39E3F8D1C1990070012669D /* cube.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		4359566A19FA4F5F00881C62 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		4359566C19FA527D00881C62 /* Cube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		D39E3F851C1822FE0012669D /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
-		D39E3F871C1830240012669D /* MetalTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetalTexture.swift; path = ../../../../../Downloads/MetalTexture.swift; sourceTree = "<group>"; };
-		D39E3F891C1831FD0012669D /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cube.png; path = ../../../../../Desktop/cube.png; sourceTree = "<group>"; };
+		D39E3F8B1C198FE70012669D /* MetalTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTexture.swift; sourceTree = "<group>"; };
+		D39E3F8D1C1990070012669D /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,14 +97,14 @@
 		35023C4219DDB96F006F3266 /* HelloMetal */ = {
 			isa = PBXGroup;
 			children = (
+				D39E3F8B1C198FE70012669D /* MetalTexture.swift */,
 				43167D7819F9371D00929F8C /* Matrix4.h */,
 				43167D7919F9371D00929F8C /* Matrix4.m */,
-				D39E3F871C1830240012669D /* MetalTexture.swift */,
 				43167D7B19F93AA100929F8C /* Vertex.swift */,
 				43167D7D19F93B2B00929F8C /* Node.swift */,
 				4359566A19FA4F5F00881C62 /* Triangle.swift */,
 				4359566C19FA527D00881C62 /* Cube.swift */,
-				D39E3F891C1831FD0012669D /* cube.png */,
+				D39E3F8D1C1990070012669D /* cube.png */,
 				D39E3F851C1822FE0012669D /* Square.swift */,
 				35023C4519DDB96F006F3266 /* AppDelegate.swift */,
 				35023C4719DDB970006F3266 /* ViewController.swift */,
@@ -227,8 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35023C4B19DDB970006F3266 /* Main.storyboard in Resources */,
+				D39E3F8E1C1990080012669D /* cube.png in Resources */,
 				35023C5019DDB970006F3266 /* LaunchScreen.xib in Resources */,
-				D39E3F8A1C1831FD0012669D /* cube.png in Resources */,
 				35023C4D19DDB970006F3266 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,12 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39E3F8C1C198FE70012669D /* MetalTexture.swift in Sources */,
 				35023C6619DDBB29006F3266 /* Shaders.metal in Sources */,
 				43167D7A19F9371D00929F8C /* Matrix4.m in Sources */,
 				35023C4819DDB970006F3266 /* ViewController.swift in Sources */,
 				43167D7E19F93B2B00929F8C /* Node.swift in Sources */,
 				4359566D19FA527D00881C62 /* Cube.swift in Sources */,
-				D39E3F881C1830250012669D /* MetalTexture.swift in Sources */,
 				43167D7C19F93AA100929F8C /* Vertex.swift in Sources */,
 				D39E3F861C1822FE0012669D /* Square.swift in Sources */,
 				4359566B19FA4F5F00881C62 /* Triangle.swift in Sources */,
